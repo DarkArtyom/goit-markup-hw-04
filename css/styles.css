@@ -33,6 +33,7 @@ ul, ol {
     --logo-web-color: #2196F3;
     --link-color: #2196F3;
     --main-button-color: #2196F3;
+    --bg-icon-color: #2196F3;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --hero-background-color: #2F303A;
     --footer-background-color: #2F303A;
@@ -375,10 +376,22 @@ img {
 .team-soc-link {
     width: 44px;
     height: 44px;
-    background-color: tomato;
+    background-color: #FFFFFF;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.team-soc-link:hover {
+    background-color: var(--bg-icon-color);
+}
+
+.team-soc-link:hover .team-soc-icon {
+    fill: #ffffff;
+}
+
 
 
 /*-------------footer----------*/
