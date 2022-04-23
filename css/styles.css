@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -164,16 +164,18 @@ img {
 
 .header-contact-list {
     display: flex;
-    margin: 0 auto;
+    margin-left: auto;
 }
 
 .header-contact-item {
     margin-right: 50px;
+    margin: auto;
 }
 
 .header-mail {
     display: flex;
     align-items: center;
+    margin-right: 30px;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -190,11 +192,13 @@ img {
 .mail-icon {
     fill: #757575;
     margin-right: 10px;
+    height: 14px;
 }
 
 .phone-icon {
     fill: #757575;
     margin-right: 10px;
+    height: 16px;
 }
 
 .header-mail:hover .mail-icon {
@@ -202,6 +206,8 @@ img {
 }
 
 .header-tel {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -424,10 +430,6 @@ img {
 
 /* -----------body-clients--------- */
 
-.section-clients {
-    padding-top: 132px;
-}
-
 .title-clients {
 font-weight: 700;
 font-size: 36px;
@@ -475,6 +477,11 @@ margin-bottom: 50px;
     background-color: var(--footer-background-color);
     padding-bottom: 60px;
     padding-top: 60px;
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
 }
 
 .address-container {
@@ -624,6 +631,9 @@ margin-bottom: 50px;
 .services-button:focus {
     color: var(--logo-studio-alt-color);
     background-color: var(--main-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .services-button-list {
@@ -677,6 +687,12 @@ margin-bottom: 50px;
 
 .services-pics-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.services-pics-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-cards {
